@@ -10,19 +10,8 @@ export const metadata: Metadata = {
   title: 'Wricom - Jasa Pembuatan Website Profesional',
   description: 'Wricom - Create Your Own Software. Kami spesialis pembuatan website company profile, e-commerce, dan landing page untuk bisnis Anda.',
   icons: {
-    icon: [
-      {
-        url: '/wricom-logo.png',
-        sizes: 'any',
-        type: 'image/png',
-      }
-    ],
+    icon: '/wricom-logo.png',
     apple: '/wricom-logo.png',
-  },
-  openGraph: {
-    title: 'Wricom - Jasa Pembuatan Website Profesional',
-    description: 'Layanan web development profesional untuk bisnis Anda',
-    images: ['/wricom-logo.png'],
   },
 }
 
