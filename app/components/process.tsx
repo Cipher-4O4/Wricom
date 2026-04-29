@@ -59,7 +59,7 @@ export default function Process() {
     <section id="process" className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -69,7 +69,7 @@ export default function Process() {
             Proses <span className="text-blue-600">Pengerjaan</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Workflow terstruktur yang memastikan project berjalan lancar dari awal sampai launch, 
+            Workflow terstruktur yang memastikan project berjalan lancar dari awal sampai launch,
             dengan transparansi penuh kepada client.
           </p>
         </motion.div>
@@ -87,9 +87,8 @@ export default function Process() {
                 initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className={`relative flex flex-col lg:flex-row items-center gap-8 ${
-                  index % 2 === 0 ? 'lg:flex-row-reverse' : ''
-                }`}
+                className={`relative flex flex-col lg:flex-row items-center gap-8 ${index % 2 === 0 ? 'lg:flex-row-reverse' : ''
+                  }`}
               >
                 {/* Timeline Dot */}
                 <div className="absolute left-8 lg:left-1/2 w-6 h-6 bg-blue-600 rounded-full border-4 border-white dark:border-gray-900 transform lg:-translate-x-1/2 z-10"></div>
@@ -164,7 +163,7 @@ export default function Process() {
               Siap Memulai Project Anda?
             </h3>
             <p className="text-blue-100 mb-6 text-lg">
-              Konsultasi gratis tanpa biaya. Diskusikan ide dan kebutuhan website Anda, 
+              Konsultasi gratis tanpa biaya. Diskusikan ide dan kebutuhan website Anda,
               kami akan siapkan solusi terbaik dengan timeline dan budget yang jelas.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -100,7 +100,7 @@ export default function Portfolio() {
     <section id="portfolio" className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -133,7 +133,7 @@ export default function Portfolio() {
                     <div className="text-blue-100">{project.category}</div>
                   </div>
                 </div>
-                
+
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-300 flex items-center justify-center">
                   <div className="flex gap-4 transform translate-y-10 group-hover:translate-y-0 transition-transform duration-300">
@@ -169,7 +169,7 @@ export default function Portfolio() {
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                   {project.title}
                 </h3>
-                
+
                 <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
                   {project.description}
                 </p>
@@ -177,7 +177,7 @@ export default function Portfolio() {
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, techIndex) => (
-                    <span 
+                    <span
                       key={techIndex}
                       className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm"
                     >

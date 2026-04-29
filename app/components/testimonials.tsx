@@ -71,7 +71,7 @@ export default function Testimonials() {
     <section id="testimonials" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

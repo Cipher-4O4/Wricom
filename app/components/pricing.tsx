@@ -207,7 +207,7 @@ export default function Pricing() {
     <section id="pricing" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -229,31 +229,28 @@ export default function Pricing() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className={`relative rounded-2xl border transition-all duration-300 overflow-hidden group ${
-                pkg.badge === 'Best Choice' || pkg.badge === 'Most Popular'
-                  ? 'border-blue-300 dark:border-blue-600 shadow-lg shadow-blue-500/20'
-                  : 'border-gray-200 dark:border-gray-700'
-              }`}
+              className={`relative rounded-2xl border transition-all duration-300 overflow-hidden group ${pkg.badge === 'Best Choice' || pkg.badge === 'Most Popular'
+                ? 'border-blue-300 dark:border-blue-600 shadow-lg shadow-blue-500/20'
+                : 'border-gray-200 dark:border-gray-700'
+                }`}
             >
               {/* Top Border Color */}
-              <div className={`absolute top-0 left-0 right-0 h-1 ${
-                pkg.badge === 'Best Choice' ? 'bg-gradient-to-r from-gray-700 to-gray-800' :
+              <div className={`absolute top-0 left-0 right-0 h-1 ${pkg.badge === 'Best Choice' ? 'bg-gradient-to-r from-gray-700 to-gray-800' :
                 pkg.badge === 'Most Popular' ? 'bg-gradient-to-r from-blue-600 to-blue-700' :
-                'bg-gradient-to-r from-red-500 to-red-600'
-              }`}></div>
+                  'bg-gradient-to-r from-red-500 to-red-600'
+                }`}></div>
 
               {/* Badge */}
               {pkg.badge && (
                 <div className="absolute top-4 left-4">
-                  <span className={`inline-block px-3 py-1 rounded-full text-white text-sm font-semibold ${
-                    pkg.badge === 'Best Choice' ? 'bg-gray-700' : 'bg-blue-600'
-                  }`}>
+                  <span className={`inline-block px-3 py-1 rounded-full text-white text-sm font-semibold ${pkg.badge === 'Best Choice' ? 'bg-gray-700' : 'bg-blue-600'
+                    }`}>
                     {pkg.badge}
                   </span>
                 </div>
               )}
 
-              <div className="p-6 pt-8">
+              <div className={`p-6 ${pkg.badge ? 'pt-16' : 'pt-8'}`}>
                 {/* Title */}
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                   {pkg.name}
@@ -282,7 +279,7 @@ export default function Pricing() {
                       <span className="text-sm text-gray-700 dark:text-gray-300">{feature}</span>
                     </div>
                   ))}
-                  
+
                   {/* Expandable Features */}
                   {pkg.features.length > 5 && (
                     <div>

@@ -8,11 +8,11 @@ export default function Hero() {
     <section id="home" className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent"></div>
-      
+
       <div className="container mx-auto px-6 py-20 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           {/* Text Content */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -35,16 +35,16 @@ export default function Hero() {
               </span>{' '}
               Dimulai Dari Sini
             </h1>
-            
+
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Kami spesialis pembuatan website profesional, cepat, dan hasil-driven. 
-              Dari company profile hingga e-commerce, kami siap membantu bisnis Anda 
+              Kami spesialis pembuatan website profesional, cepat, dan hasil-driven.
+              Dari company profile hingga e-commerce, kami siap membantu bisnis Anda
               tumbuh lebih pesat.
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <motion.a 
+              <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 href="https://wa.me/628898153569?text=Saya%20ingin%20berkonsultasi%20tentang%20website"
@@ -55,8 +55,8 @@ export default function Hero() {
                 Konsultasi Gratis
                 <ArrowRight className="ml-2" size={20} />
               </motion.a>
-              
-              <motion.a 
+
+              <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="border border-white/30 hover:bg-white/10 text-white px-8 py-4 rounded-xl font-semibold flex items-center justify-center transition-all backdrop-blur-sm"
@@ -70,7 +70,7 @@ export default function Hero() {
             </div>
 
             {/* Stats */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
@@ -100,7 +100,7 @@ export default function Hero() {
           >
             <div className="relative">
               {/* Main Website Mockup */}
-              <motion.div 
+              <motion.div
                 whileHover={{ y: -10 }}
                 transition={{ type: "spring", stiffness: 300 }}
                 className="bg-gradient-to-br from-blue-500/20 to-purple-600/20 rounded-2xl p-6 backdrop-blur-sm border border-white/10"
@@ -117,7 +117,7 @@ export default function Hero() {
                       wricom.digital
                     </div>
                   </div>
-                  
+
                   {/* Website Content */}
                   <div className="p-6 space-y-4">
                     <div className="h-4 bg-gradient-to-r from-blue-100 to-purple-100 rounded w-3/4"></div>
@@ -134,11 +134,11 @@ export default function Hero() {
 
               {/* Floating Elements */}
               <motion.div
-                animate={{ 
+                animate={{
                   y: [0, -20, 0],
                   rotate: [0, 5, 0]
                 }}
-                transition={{ 
+                transition={{
                   duration: 4,
                   repeat: Infinity,
                   ease: "easeInOut"
@@ -149,11 +149,11 @@ export default function Hero() {
               </motion.div>
 
               <motion.div
-                animate={{ 
+                animate={{
                   y: [0, 15, 0],
                   rotate: [0, -3, 0]
                 }}
-                transition={{ 
+                transition={{
                   duration: 3,
                   repeat: Infinity,
                   ease: "easeInOut",

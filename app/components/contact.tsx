@@ -66,7 +66,7 @@ export default function Contact() {
     <section id="contact" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -76,7 +76,7 @@ export default function Contact() {
             Mari <span className="text-blue-600">Bekerja Sama</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Siap memulai project website Anda? Konsultasi gratis tanpa biaya. 
+            Siap memulai project website Anda? Konsultasi gratis tanpa biaya.
             Diskusikan kebutuhan dan dapatkan solusi terbaik untuk bisnis Anda.
           </p>
         </motion.div>
@@ -94,14 +94,14 @@ export default function Contact() {
                 Informasi Kontak
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-8">
-                Hubungi kami melalui berbagai channel yang tersedia. 
+                Hubungi kami melalui berbagai channel yang tersedia.
                 Tim support kami siap membantu 24/7.
               </p>
             </div>
 
             {/* Contact Methods */}
             <div className="space-y-6">
-              <motion.div 
+              <motion.div
                 whileHover={{ x: 10 }}
                 className="flex items-center gap-4 p-4 rounded-2xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700"
               >
@@ -115,7 +115,7 @@ export default function Contact() {
                 </div>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 whileHover={{ x: 10 }}
                 className="flex items-center gap-4 p-4 rounded-2xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700"
               >
@@ -129,7 +129,7 @@ export default function Contact() {
                 </div>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 whileHover={{ x: 10 }}
                 className="flex items-center gap-4 p-4 rounded-2xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700"
               >
@@ -143,7 +143,7 @@ export default function Contact() {
                 </div>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 whileHover={{ x: 10 }}
                 className="flex items-center gap-4 p-4 rounded-2xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700"
               >
@@ -265,11 +265,10 @@ export default function Contact() {
                 </div>
 
                 {submitMessage && (
-                  <div className={`p-4 rounded-xl text-center font-medium ${
-                    submitMessage.includes('✅') 
-                      ? 'bg-green-100 dark:bg-green-900/20 text-green-700 dark:text-green-400' 
+                  <div className={`p-4 rounded-xl text-center font-medium ${submitMessage.includes('✅')
+                      ? 'bg-green-100 dark:bg-green-900/20 text-green-700 dark:text-green-400'
                       : 'bg-red-100 dark:bg-red-900/20 text-red-700 dark:text-red-400'
-                  }`}>
+                    }`}>
                     {submitMessage}
                   </div>
                 )}
@@ -279,11 +278,10 @@ export default function Contact() {
                   disabled={isSubmitting}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className={`w-full py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 ${
-                    isSubmitting
+                  className={`w-full py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 ${isSubmitting
                       ? 'bg-gray-400 dark:bg-gray-600 text-gray-700 dark:text-gray-300 cursor-not-allowed'
                       : 'bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-600 text-white'
-                  }`}
+                    }`}
                 >
                   {isSubmitting ? (
                     <>
