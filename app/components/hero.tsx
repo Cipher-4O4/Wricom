@@ -105,27 +105,53 @@ export default function Hero() {
                 transition={{ type: "spring", stiffness: 300 }}
                 className="bg-gradient-to-br from-blue-500/20 to-purple-600/20 rounded-2xl p-6 backdrop-blur-sm border border-white/10"
               >
-                <div className="bg-white rounded-xl p-1 shadow-2xl">
+                <div className="bg-slate-950/85 backdrop-blur-md rounded-xl p-1 shadow-2xl border border-white/10">
                   {/* Browser Header */}
-                  <div className="flex items-center gap-2 p-4 border-b">
+                  <div className="flex items-center gap-2 p-4 border-b border-slate-800/80">
                     <div className="flex gap-1.5">
-                      <div className="w-3 h-3 rounded-full bg-red-400"></div>
-                      <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
-                      <div className="w-3 h-3 rounded-full bg-green-400"></div>
+                      <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
+                      <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                      <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
                     </div>
-                    <div className="flex-1 bg-gray-100 rounded px-3 py-1.5 text-xs text-gray-600">
+                    <div className="flex-1 bg-slate-900/60 border border-slate-800 rounded px-3 py-1.5 text-[10px] text-slate-400 text-center font-mono select-none">
                       wricom.digital
                     </div>
                   </div>
 
                   {/* Website Content */}
                   <div className="p-6 space-y-4">
-                    <div className="h-4 bg-gradient-to-r from-blue-100 to-purple-100 rounded w-3/4"></div>
-                    <div className="h-4 bg-gray-100 rounded w-1/2"></div>
-                    <div className="h-24 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg mt-4 flex items-center justify-center">
-                      <div className="text-center">
-                        <div className="text-lg font-semibold text-gray-800">Hero Section</div>
-                        <div className="text-sm text-gray-600">Website Profesional</div>
+                    {/* Mock Nav Bar */}
+                    <div className="flex items-center justify-between border-b border-slate-800/50 pb-3">
+                      <div className="text-xs font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Wricom</div>
+                      <div className="flex gap-2">
+                        <div className="w-6 h-1.5 bg-slate-800 rounded-full"></div>
+                        <div className="w-6 h-1.5 bg-slate-800 rounded-full"></div>
+                        <div className="w-6 h-1.5 bg-slate-800 rounded-full"></div>
+                      </div>
+                    </div>
+
+                    {/* Mock Hero Area */}
+                    <div className="grid grid-cols-2 gap-4 pt-1">
+                      <div className="space-y-3">
+                        <div className="h-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 rounded w-full"></div>
+                        <div className="h-2 bg-slate-800 rounded w-5/6"></div>
+                        <div className="h-2 bg-slate-800 rounded w-2/3"></div>
+                        <div className="flex gap-2 pt-2">
+                          <div className="w-10 h-4 bg-blue-600 rounded-md"></div>
+                          <div className="w-10 h-4 bg-slate-800 rounded-md"></div>
+                        </div>
+                      </div>
+                      <div className="bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 border border-slate-800/60 rounded-xl p-3 flex flex-col justify-between h-24">
+                        <div className="flex justify-between items-center">
+                          <div className="w-5 h-5 bg-blue-500/20 rounded-md flex items-center justify-center">
+                            <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                          </div>
+                          <div className="w-8 h-1.5 bg-slate-800 rounded-full"></div>
+                        </div>
+                        <div className="space-y-1.5">
+                          <div className="h-1.5 bg-slate-700 rounded w-3/4"></div>
+                          <div className="h-1.5 bg-slate-800 rounded w-1/2"></div>
+                        </div>
                       </div>
                     </div>
                   </div>
