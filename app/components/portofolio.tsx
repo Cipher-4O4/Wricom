@@ -14,6 +14,17 @@ const projects = [
     liveUrl: "https://spanda-coffee.vercel.app/",
     githubUrl: "#",
     featured: true
+  },
+  {
+    id: 2,
+    title: "Sariaji Florist",
+    description: "Website toko bunga online (Florist) yang menampilkan berbagai macam katalog buket bunga, papan ucapan, dan dekorasi acara dengan sistem manajemen produk yang dinamis. Dibangun menggunakan PHP, MySQL, dan Tailwind CSS.",
+    category: "Toko Online / Florist",
+    image: "/api/placeholder/600/400",
+    technologies: ["PHP", "MySQL", "Tailwind CSS"],
+    liveUrl: "https://www.sariajiflorist.com/",
+    githubUrl: "#",
+    featured: true
   }
 ]
 
