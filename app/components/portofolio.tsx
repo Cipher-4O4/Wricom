@@ -25,6 +25,17 @@ const projects = [
     liveUrl: "https://www.sariajiflorist.com/",
     githubUrl: "#",
     featured: true
+  },
+  {
+    id: 3,
+    title: "Megawall",
+    description: "Website e-commerce dekorasi dinding (wall panel / wallpaper) interaktif yang memudahkan pelanggan menjelajahi katalog produk, melakukan pemesanan, dan transaksi secara efisien. Dibangun menggunakan React, Tailwind CSS, dan MySQL.",
+    category: "E-Commerce / Wall Panel",
+    image: "/api/placeholder/600/400",
+    technologies: ["React", "Tailwind CSS", "MySQL"],
+    liveUrl: "https://megawall.my.id/",
+    githubUrl: "#",
+    featured: true
   }
 ]
 
